@@ -1,0 +1,31 @@
+<div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li class="active"><a ng-href="#">Home</a></li>
+    <li><a class="dropdown-toggle" ng-href="#">Views</a>
+      <ul class="dropdown-menu">
+        <li ng-repeat="thing in awesomeThings">
+          <a>{{thing}}</a>
+        </li>
+      </ul>
+    </li>
+    <li><a ng-href="#">Contact</a></li>
+  </ul>
+  <h3 ng class="text-muted">AngularJS samples by raduy</h3>
+</div>
+
+<div class="jumbotron">
+  <p class="lead">
+    <img width="145em" src="images/angularjs-logo.png"><br/>
+    Develop with pleasure.
+  </p>
+  <div class="alert">
+    <input class="form-control" ng-model="model.searchQuery" placeholder="what you are looking for?"/>
+    <p ng-repeat="sample in samples | filter:model.searchQuery">
+      <a ng-click="changeRoute(sample.url)">{{sample.name}}</a>
+    </p>
+
+  </div>
+</div>
+<div class="footer">
+  <p>Any feedback very welcome :)</p>
+</div>

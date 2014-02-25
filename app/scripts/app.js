@@ -17,6 +17,10 @@ angular.module('angularApp', [
         templateUrl: 'views/stopwatch.html',
         controller: 'StopwatchController'
       })
+      .when('/guesser', {
+        templateUrl: 'views/guesser.html',
+        controller: 'GuesserController'
+      })
       .otherwise({
         redirectTo: '/'
       });

@@ -2,7 +2,8 @@
 
 rsControllers.controller('MainController', ['$scope', '$location', function ($scope, $location) {
     var samples = [ 
-    	{name: 'stopwatch', url: 'stopwatch'}
+    	{name: 'stopwatch', url: 'stopwatch'},
+    	{name: 'guesser', url: 'guesser'}
     ];
 
     $scope.samples = samples;

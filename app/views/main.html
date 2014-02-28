@@ -3,8 +3,8 @@
     <li class="active"><a ng-href="#">Home</a></li>
     <li><a class="dropdown-toggle" ng-href="#">Views</a>
       <ul class="dropdown-menu">
-        <li ng-repeat="thing in awesomeThings">
-          <a>{{thing}}</a>
+        <li ng-repeat="sample in samples">
+          <a ng-click="changeRoute(sample.url)">{{sample.name}}</a>
         </li>
       </ul>
     </li>

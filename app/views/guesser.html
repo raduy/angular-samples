@@ -4,7 +4,7 @@
 
 	<input class="form-control" ng-model="model.input" placeholder="guess the value from listed below e.g. karma">
 	<ul> 
-		<li ng-repeat="value in model.values">{{$index+1}}. {{value}}&nbsp;&nbsp;</li>
+		<li class="inline" ng-repeat="value in model.values">{{$index+1}}. {{value}}&nbsp;&nbsp;</li>
 		<button class="btn btn-default btn-lg" ng-click="toggle()">
 			<span class="glyphicon glyphicon-stats"> toggle</span>
 		</button>

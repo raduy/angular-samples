@@ -1,0 +1,15 @@
+<div class="jumbotron">
+	<h3 class="">Picker</h3>
+	<hr/>
+
+	<div class="alert alert-info">Choose days:</div>
+	<div class="picker-area centered">
+		<button ng-click="toggle($index)" ng-class="{'btn': true, 'btn-picked': day.picked}" 
+			ng-repeat="day in data.days">{{day.which}}</button>
+	</div>
+
+	<hr/>
+	<div class="alert alert-info">You have choosen:</div>
+	<p class="inline" ng-repeat="day in data.days" ng-show="day.picked === true">{{day.which}} </p>
+</div>
+

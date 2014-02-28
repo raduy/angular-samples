@@ -21,6 +21,10 @@ angular.module('angularApp', [
         templateUrl: 'views/guesser.html',
         controller: 'GuesserController'
       })
+      .when('/picker', {
+        templateUrl: 'views/picker.html',
+        controller: 'PickerController'
+      })
       .otherwise({
         redirectTo: '/'
       });

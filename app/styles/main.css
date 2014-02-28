@@ -1,4 +1,19 @@
-ul li {
+.picker-area {
+  margin: 0 auto;
+  border: groove;
+  width: 21em;
+}
+
+.btn-picked {
+  background: green;
+}
+
+.btn {
+  width: 3em;
+  text-align: center;
+}
+
+.inline {
   display: inline;
 }
 

@@ -1,3 +1,3 @@
 'use strict';
 
-var rsFilters = angular.module('rs.filters', []);
+var rsFilters = angular.module('rs.filters', []);				
